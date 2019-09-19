@@ -1,9 +1,10 @@
 # Emacs temporary files
 *~
-
+data/
 test_results/
 logs/
 runs/
+Landmark_Detection/outputs
 Object_Detection/tfdata
 Object_Detection/jobs
 Object_Detection/pred_crop
