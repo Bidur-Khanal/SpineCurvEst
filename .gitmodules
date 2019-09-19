@@ -1,0 +1,3 @@
+[submodule "Object_Detection/luminoth"]
+	path = Object_Detection/luminoth
+	url = https://github.com/Bidur-Khanal/luminoth.git
