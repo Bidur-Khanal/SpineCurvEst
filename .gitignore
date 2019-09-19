@@ -1,6 +1,6 @@
 # Emacs temporary files
 *~
-results/
+
 test_results/
 logs/
 runs/
