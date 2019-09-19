@@ -1,0 +1,94 @@
+
+train:
+
+  # Name used to identify the run. Data inside `job_dir` will be stored under
+
+  # `run_name`.
+
+  run_name: vertebra-detection
+
+  # Base directory in which model checkpoints & summaries (for Tensorboard) will
+
+  # be saved.
+
+  job_dir: jobs/
+
+  save_checkpoint_secs: 1000
+
+  save_summaries_secs: 1000
+  
+  
+    
+    
+
+
+
+  # Number of epochs (complete dataset batches) to run.
+
+  num_epochs: 500
+
+
+
+dataset:
+
+  type: object_detection
+
+  # From which directory to read the dataset.
+
+  dir: tfdata/
+  
+  data_augmentation:
+    - flip:
+        left_right: True
+        up_down: True
+        prob: 0.5
+        
+        
+        
+    
+
+
+
+model:
+
+  type: fasterrcnn
+
+  network:
+
+    # Total number of classes to predict.
+
+    num_classes: 1
+    
+    
+  # Whether to use batch normalization in the model.
+  batch_norm: False
+  
+  base_network:
+    # Which type of pretrained network to use.
+    architecture: resnet_v1_101
+    # Should we train the pretrained network.
+    trainable: True
+    # From which file to load the weights.
+    
+    download: True
+    # Which endpoint layer to use as feature map for network.
+    endpoint:
+    # Starting point after which all the variables in the base network will be
+    # trainable. If not specified, then all the variables in the network will be
+    # trainable.
+    fine_tune_from: block2
+    
+      
+  anchors:
+    # Base size to use for anchors.
+    base_size: 256
+    # Scale used for generating anchor sizes.
+    scales: [0.25, 0.5]
+    
+    ratios: [1, 2]
+    # Stride depending on feature map size (of pretrained).
+    
+  
+ 
+    
+    
