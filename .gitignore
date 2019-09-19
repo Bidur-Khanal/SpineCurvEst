@@ -4,6 +4,9 @@ results/
 test_results/
 logs/
 runs/
+Object_Detection/tfdata
+Object_Detection/jobs
+Object_Detection/pred_crop
 
 # Python related files
 *.pyc
