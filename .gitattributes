@@ -1,2 +1,1 @@
-
-Jupyter_Notebooks/ linguist-detectable=false
+*.ipynb linguist-detectable=false
