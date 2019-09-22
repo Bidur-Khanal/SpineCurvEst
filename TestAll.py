@@ -170,11 +170,11 @@ def outlier_rejection(bounding_box):
 if __name__ == "__main__":
     checkpoint = "d40a34821081"
     detection = Detector(checkpoint)
-    model = load_densenet_model("Landmark_Detection/outputs/model-518.h5")
-    image_path = "data/cropped test/"
-    filename_csv = "data/labels/test_filenames.csv"
+    model = load_densenet_model("Landmark_Detection/outputs/model-306.h5")
+    image_path = "Object_Detection/data/val/"
+    filename_csv = "Object_Detection/data/labels/val_filenames.csv"
     '''image = read_image(image_path + '01-July-2019-7.jpg')
     landmarks = predict_vertebra(image, detection, model)
     img_output_path= 'results/detected_landmark.jpg'
     save_landmarks_image(image,landmarks, img_output_path)'''
-    generate_landmark_csv(image_path ,filename_csv ,detection ,model ,'test_results/test_landmarks.csv' ,'test_results/')
+    generate_landmark_csv(image_path ,filename_csv ,detection ,model ,'test_results/val_landmarks.csv' ,'test_results/')
