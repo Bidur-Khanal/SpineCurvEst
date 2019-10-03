@@ -15,7 +15,7 @@ Here, we propose a novel framework to estimate vertebra landmarks. This framewor
 - Landmark Estimator to find landmark location in each vertebra.
 
 The overall network estimates 68 vertebrae landmarks (4 corners for each vertebra) to form a spinal curve. The vertebra detection and estimation is improved 
-by applying some post processing that include outliers rejection and curve smoothing.
+by applying some post processing that include outliers rejection and curve smoothing.Finally, we also compute 3 Cobb Angles (MT, PT, TL/L) using the slope of the vertebra landmarks.
 
 ## Result
 ![results](docs/results_all.png)
