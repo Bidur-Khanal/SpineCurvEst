@@ -3,7 +3,7 @@
 ## About
 This is a repository that includes all the codes used to build, train and test our framework. We participated in **Accurate Automated Spinal Curvature Estimation
 MICCAI 2019 Challenge**. Our method achieved SMAPE score of 25.69 on test dataset. Details about the challenge is available at [AASCE 2019 Grand Challenge](https://aasce19.grand-challenge.org/Home/).
-We presneted our paper at MICCAI 2019 Workshop -- SpinEva2019. [Workshop](https://csi2019.wordpress.com/)
+We presented our paper at MICCAI 2019 Workshop -- SpinEva2019. [Workshop](https://csi2019.wordpress.com/)
 
 ## Our Approach
 
