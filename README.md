@@ -26,6 +26,7 @@ If you want to use this code, refer to this folder structure:
 - Landmark_Detection : Use codes here to train local landmark detector. It implements DenseNet in keras.
 - CobbAngle_Calculation : It consisits of MATLAB code to smoothen estimated landmarks, and to calculate Cobb Angle from them.
 - `TestAll.py`: Use this for inference. It combines Object Detection, Landmark Detection and outlier rejection in a pipeline to produce overall landmarks.
+- Jupyter_Notebooks: Utility scripts written in notebook
 
 
 *We are working on further improvement of this framework.*
